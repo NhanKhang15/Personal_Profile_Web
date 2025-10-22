@@ -34,14 +34,8 @@ Just open `index.html` in your browser (double click) or serve with VS Code Live
 
 ## Deploy
 ### GitHub Pages
-1. Create a repo and push this folder.
-2. In repo Settings → Pages → Source: select `main` branch `/ (root)`.
-3. Wait ~1–2 minutes, your site goes live.
+1. (https://nhankhang15.github.io/Personal_Profile_Web/map.html)
 
-### Netlify
-1. Drag & drop this folder into https://app.netlify.com/drop or connect repo.
-2. Build command: _(none)_; Publish directory: `/`.
-3. Deploy.
 
 ## Customize
 - Replace text/images, update links in nav across files.

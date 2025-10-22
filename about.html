@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal site of Nguyễn Nhân Khang – portfolio, projects, blog, and contact." />
+  <title>About · Nguyễn Nhân Khang</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header" role="banner">
+    <div class="container navbar">
+      <a class="brand" href="index.html" aria-label="Homepage">
+        <img src="assets/images/favicon.svg" alt="" />
+        <span>Nguyễn Nhân Khang<span style="color:var(--muted)">.dev</span></span>
+      </a>
+      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      <nav id="navLinks" class="nav-links" role="navigation" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="map.html">Map</a>
+        <a href="policy.html">Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    
+<section class="grid">
+  <h1 class="col-12">About Me</h1>
+  <div class="col-6">
+    <p>I’m a Computer Science student focused on full‑stack development. I love building fast, clean UIs and robust backends.</p>
+    <ul>
+      <li>Languages: JS/TS, Python, Java, C#</li>
+      <li>Tools: React, Node, Spring Boot, Docker, SQL</li>
+      <li>Interests: UX, data viz, systems design</li>
+    </ul>
+  </div>
+  <div class="col-6">
+    <img src="assets/images/hìnhAvatar.jpg" alt="Portrait of Nguyễn Nhân Khang" />
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="y"></span> Nguyễn Nhân Khang. All rights reserved.</div>
+      <div class="socials">
+        <a href="#" aria-label=GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal site of Your Name – portfolio, projects, blog, and contact." />
+  <title>Map / Video · Your Name</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header" role="banner">
+    <div class="container navbar">
+      <a class="brand" href="index.html" aria-label="Homepage">
+        <img src="assets/images/favicon.svg" alt="" />
+        <span>Nguyễn Nhân Khang<span style="color:var(--muted)">.dev</span></span>
+      </a>
+      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      <nav id="navLinks" class="nav-links" role="navigation" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="map.html" aria-current="page">Map</a>
+        <a href="policy.html">Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    
+<section>
+  <h1>Map / Video</h1>
+  <p>Embedded content via <code>&lt;iframe&gt;</code> as required.</p>
+  <div class="card">
+    <h2>Google Maps (Demo)</h2>
+    <iframe title="Map to a cool place"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.202836307099!2d144.9631609766429!3d-37.80799867199263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642cb4b1a6a5d%3A0x5045675218ceed0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1688899999999"
+      width="100%" height="360" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  </div>
+  <div class="card" style="margin-top:12px;">
+    <h2>Embedded Video (Demo)</h2>
+    <div style="position:relative;padding-top:56.25%;">
+      <iframe 
+        title="YouTube demo" 
+        src="https://www.youtube.com/embed/3kaGC_DrUnw?si=QT6RJWSuG9YemJq6" 
+        style="position:absolute; inset:0; border:0; width:100%; height:100%;" 
+        loading="lazy" 
+        allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="y"></span> Your Name. All rights reserved.</div>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>

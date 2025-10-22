@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal site of Nguyễn Nhân Khang – portfolio, projects, blog, and contact." />
+  <title>Home · Nguyễn Nhân Khang</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header" role="banner">
+    <div class="container navbar">
+      <a class="brand" href="index.html" aria-label="Homepage">
+        <img src="assets/images/favicon.svg" alt="" />
+        <span>Nguyễn Nhân khang<span style="color:var(--muted)">.dev</span></span>
+      </a>
+      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      <nav id="navLinks" class="nav-links" role="navigation" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="map.html">Map</a>
+        <a href="policy.html">Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    
+<section class="hero">
+  <h1>Hi, I’m <strong>Nguyễn Nhân Khang</strong> — a IT student building useful stuff on the web.</h1>
+  <p>Here you’ll find my projects, write-ups, and how to reach me. The site is fully responsive, accessible, and deployed on GitHub Pages/Netlify.</p>
+  <div class="cta">
+    <a class="btn primary" href="projects.html">See Projects</a>
+    <a class="btn" href="contact.html">Contact Me</a>
+  </div>
+</section>
+
+<section class="grid" aria-labelledby="home-sections">
+  <h2 id="home-sections" class="col-12">Highlights</h2>
+  <div class="card col-6">
+    <h3>Recent Project</h3>
+    <p>Warehouse Management System (React + Spring Boot + MySQL). Short description goes here.</p>
+    <p><a href="projects.html">Read more →</a></p>
+  </div>
+  <div class="card col-6">
+    <h3>Recent Post</h3>
+    <p>“How I tuned my Docker Compose for local dev” — quick tips for smoother containers.</p>
+    <p><a href="post-1.html">Read post →</a></p>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="y"></span> Nguyễn Nhân Khang. All rights reserved.</div>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
